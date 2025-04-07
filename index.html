@@ -9,49 +9,30 @@
 </head>
 
 <body>
-  <!-- Header Section -->
-  <header class="header">
+  <!-- Intro Section with background image -->
+  <section id="intro" class="intro">
     <div class="container">
-      <img src="yaswanth-profile.jpg" alt="Yaswanth Kumar Chaganti" class="profile-img">
-      <h1 class="name">Yaswanth Kumar Chaganti</h1>
-      <p class="subtitle">Data Analyst | Power BI | Python | SQL | Machine Learning</p>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#get-in-touch">Get In Touch</a></li>
-        </ul>
-      </nav>
+      <h1>Hi, I'm Yaswanth Kumar Chaganti</h1>
+      <p>SQL, Python, Power BI, and Excel are my tools to unlock the power of data. I’m a Data Analyst who helps turn "uh-oh" into "aha!"</p>
+      <a href="#about" class="btn">Learn More</a>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
   <section id="about" class="about">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a Data Analyst with over 3.5 years of experience in data analysis, building dashboards, automating reports, and working with technologies like Power BI, SQL, and Python. Passionate about making data-driven decisions and solving complex business problems.</p>
+      <h2>Who Am I?</h2>
+      <p>My childhood quest to understand the beauty of the world led me to data analysis. I use Python, SQL, Power BI, and Tableau to help businesses unlock the potential of their data.</p>
+      <a href="#about-details" class="btn">Learn More</a>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
     <div class="container">
-      <h2>Skills & Tools</h2>
-      <div class="skills-list">
-        <div class="skill-item">
-          <img src="powerbi-icon.png" alt="Power BI">
-          <p>Power BI</p>
-        </div>
-        <div class="skill-item">
-          <img src="python-icon.png" alt="Python">
-          <p>Python</p>
-        </div>
-        <div class="skill-item">
-          <img src="sql-icon.png" alt="SQL">
-          <p>SQL</p>
-        </div>
-      </div>
+      <h2>Experience</h2>
+      <p>From data analyst internships to publishing research papers and working with diverse organizations, I’ve applied data analysis to solve real-world challenges.</p>
+      <a href="#experience-details" class="btn">Learn More</a>
     </div>
   </section>
 
@@ -59,54 +40,66 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
-
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="sales-analytics.jpg" alt="Sales Analytics Dashboard">
-        <h3>Sales Analytics Dashboard</h3>
-        <p>Power BI dashboard analyzing regional sales and shipping trends.</p>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="covid-trend-analysis.jpg" alt="COVID-19 Trend Analysis">
-        <h3>COVID-19 Trend Analysis</h3>
-        <p>Dashboard analyzing global COVID-19 trends with data filters and projections.</p>
-      </div>
+      <p>Every dataset tells a story. Dive into my projects where I bring data to life, whether through dashboards, forecasting models, or insightful visualizations.</p>
+      <a href="#projects-details" class="btn">Learn More</a>
     </div>
   </section>
 
-  <!-- Get In Touch Section -->
-  <section id="get-in-touch" class="get-in-touch">
+  <!-- Education Section -->
+  <section id="education" class="education">
     <div class="container">
-      <h2>Get In Touch</h2>
-      <p>If you'd like to reach out, feel free to connect with me on the following platforms:</p>
-      <div class="contact-details">
-        <p><strong>Email:</strong> <a href="mailto:yaswanthkumar@gmail.com">yaswanthkumar@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti" target="_blank">LinkedIn Profile</a></p>
-      </div>
+      <h2>Education</h2>
+      <p>With a master's degree in Computer Science and years of learning, I’ve gained the tools to help businesses make data-driven decisions.</p>
+      <a href="#education-details" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Detail Sections -->
+  <!-- About Details -->
+  <section id="about-details" class="details">
+    <div class="container">
+      <h2>About Me - Detailed</h2>
+      <p>My journey into data analysis started early. I’ve always been fascinated by how data can reveal insights and transform businesses. I’ve used my skills across multiple industries to extract meaningful information and help organizations make informed decisions. My expertise includes working with Python, SQL, Power BI, Tableau, and more.</p>
+      <a href="#about" class="back-link">Back to About</a>
+    </div>
+  </section>
+
+  <!-- Experience Details -->
+  <section id="experience-details" class="details">
+    <div class="container">
+      <h2>Experience - Detailed</h2>
+      <p>My experience spans multiple organizations, where I’ve taken on various roles, including data analysis, research, and automation. I've published two scientific papers, led several internships, and worked on automation solutions for business processes.</p>
+      <a href="#experience" class="back-link">Back to Experience</a>
+    </div>
+  </section>
+
+  <!-- Projects Details -->
+  <section id="projects-details" class="details">
+    <div class="container">
+      <h2>Projects - Detailed</h2>
+      <p>Check out my projects that showcase my skills in data analysis. From building Power BI dashboards to forecasting models, my projects demonstrate my ability to translate raw data into actionable insights.</p>
+      <a href="#projects" class="back-link">Back to Projects</a>
+    </div>
+  </section>
+
+  <!-- Education Details -->
+  <section id="education-details" class="details">
+    <div class="container">
+      <h2>Education - Detailed</h2>
+      <p>I completed my Master’s in Computer Science from Texas Tech University, where I developed a strong foundation in data analysis, machine learning, and software development.</p>
+      <a href="#education" class="back-link">Back to Education</a>
     </div>
   </section>
 
   <!-- JavaScript for Scroll Animation -->
   <script>
-    // Show the About section on scroll
+    // Show sections on scroll
     window.addEventListener('scroll', function () {
       const aboutSection = document.querySelector('.about');
       const sectionPosition = aboutSection.getBoundingClientRect().top;
       const screenPosition = window.innerHeight / 1.5;
       if (sectionPosition < screenPosition) {
         aboutSection.classList.add('visible');
-      }
-    });
-
-    // Scroll animation for Skills section
-    window.addEventListener('scroll', function () {
-      const skillsSection = document.querySelector('.skills');
-      const skillsPosition = skillsSection.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.5;
-      if (skillsPosition < screenPosition) {
-        skillsSection.classList.add('visible');
       }
     });
   </script>
