@@ -2,7 +2,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #333; /* Dark grey background */
-  color: white;
+  color: white; /* Light text color for visibility */
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -17,7 +17,7 @@ body {
 
 /* Header Section */
 .header {
-  background-color: #111; /* Darker background for header */
+  background-color: #111;
   text-align: center;
   padding: 10px 0;
 }
@@ -48,39 +48,9 @@ body {
   background-color: #3498db; /* Lighter blue for hover effect */
 }
 
-/* Intro Section with Dark Background */
-#intro {
-  background-color: #222; /* Darker background for intro */
-  color: white;
-  text-align: center;
-  padding: 100px 0;
-}
-
-#intro h1 {
-  font-size: 3.5em;
-  margin-bottom: 20px;
-}
-
-#intro p {
-  font-size: 1.5em;
-  margin-bottom: 30px;
-}
-
-#intro .btn {
-  padding: 15px 25px;
-  background-color: #2980b9;
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-  border-radius: 5px;
-}
-
-#intro .btn:hover {
-  background-color: #3498db;
-}
-
-/* Section Styling */
+/* Sections (Intro, About, Education, Experience, Projects) */
 section {
+  opacity: 1; /* Ensure sections are visible by default */
   padding: 80px 0;
   text-align: center;
 }
@@ -96,7 +66,6 @@ section p {
   color: #bdc3c7;
 }
 
-/* Button Styling */
 section .btn {
   padding: 12px 20px;
   background-color: #2980b9;
@@ -110,9 +79,17 @@ section .btn:hover {
   background-color: #3498db;
 }
 
-/* Details Section */
+/* Specific Section Styles */
+#intro {
+  background-color: #222; /* Darker background for intro */
+}
+
+#about, #education, #experience, #projects, #get-in-touch {
+  background-color: #444; /* Light dark background for sections */
+}
+
 .details {
-  background-color: #444;
+  background-color: #555; /* Slightly lighter dark background */
   color: white;
   padding: 50px 0;
 }
@@ -127,30 +104,8 @@ section .btn:hover {
   color: #bdc3c7;
 }
 
-.details .back-link {
-  font-size: 1.2em;
-  color: #2980b9;
-  text-decoration: none;
-}
-
-.details .back-link:hover {
-  color: #3498db;
-}
-
-/* Scroll Animation */
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Contact Section */
-#contact {
+.get-in-touch {
   background-color: #222;
   color: white;
   text-align: center;
@@ -172,7 +127,18 @@ section.visible {
   color: #3498db;
 }
 
-/* Responsive Design */
+/* Scroll Animation */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
