@@ -87,6 +87,29 @@
       </form>
     </div>
   </section>
+
+  <!-- JavaScript for Scroll Animation -->
+  <script>
+    // Show the About section on scroll
+    window.addEventListener('scroll', function () {
+      const aboutSection = document.querySelector('.about');
+      const sectionPosition = aboutSection.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.5;
+      if (sectionPosition < screenPosition) {
+        aboutSection.classList.add('visible');
+      }
+    });
+
+    // Scroll animation for other sections
+    window.addEventListener('scroll', function () {
+      const skillsSection = document.querySelector('.skills');
+      const skillsPosition = skillsSection.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.5;
+      if (skillsPosition < screenPosition) {
+        skillsSection.classList.add('visible');
+      }
+    });
+  </script>
 </body>
 
 </html>
