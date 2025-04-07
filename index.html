@@ -13,7 +13,7 @@
   <section id="intro" class="intro">
     <div class="container">
       <h1>Hi, I'm Yaswanth Kumar Chaganti</h1>
-      <p>SQL, Python, Power BI, and Excel are my tools to unlock the power of data. I’m a Data Analyst who helps turn "uh-oh" into "aha!"</p>
+      <p>Data Analyst with 3.5+ years of experience in Power BI, SQL, and Python, delivering data-driven insights to help businesses make informed decisions.</p>
       <a href="#about" class="btn">Learn More</a>
     </div>
   </section>
@@ -22,7 +22,7 @@
   <section id="about" class="about">
     <div class="container">
       <h2>Who Am I?</h2>
-      <p>My childhood quest to understand the beauty of the world led me to data analysis. I use Python, SQL, Power BI, and Tableau to help businesses unlock the potential of their data.</p>
+      <p>Experienced Data Analyst skilled in building dashboards, automated reporting, and developing data-driven insights. I specialize in tools like Power BI, SQL, Python, and Tableau to drive operational efficiency.</p>
       <a href="#about-details" class="btn">Learn More</a>
     </div>
   </section>
@@ -31,7 +31,7 @@
   <section id="experience" class="experience">
     <div class="container">
       <h2>Experience</h2>
-      <p>From data analyst internships to publishing research papers and working with diverse organizations, I’ve applied data analysis to solve real-world challenges.</p>
+      <p>Worked with top organizations such as Accenture, Progress Solutions, and Texas Tech University. I have designed interactive Power BI dashboards, developed automated ETL pipelines, and improved business operations using data analysis.</p>
       <a href="#experience-details" class="btn">Learn More</a>
     </div>
   </section>
@@ -40,8 +40,17 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
-      <p>Every dataset tells a story. Dive into my projects where I bring data to life, whether through dashboards, forecasting models, or insightful visualizations.</p>
+      <p>I've worked on several data analysis projects, including dashboard designs, forecasting models, and sales optimization projects. Explore my work below.</p>
       <a href="#projects-details" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p>Master’s degree in Computer Science from Texas Tech University, specializing in data science and machine learning techniques.</p>
+      <a href="#education-details" class="btn">Learn More</a>
     </div>
   </section>
 
@@ -49,9 +58,9 @@
   <section id="get-in-touch" class="get-in-touch">
     <div class="container">
       <h2>Get In Touch</h2>
-      <p>If you'd like to reach out, feel free to connect with me on the following platforms:</p>
+      <p>If you'd like to reach out, feel free to contact me:</p>
       <div class="contact-details">
-        <p><strong>Email:</strong> <a href="mailto:yaswanthkumar@gmail.com">yaswanthkumar@gmail.com</a></p>
+        <p><strong>Email:</strong> <a href="mailto:yaswanthkumarchaganti@gmail.com">yaswanthkumarchaganti@gmail.com</a></p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti" target="_blank">LinkedIn Profile</a></p>
       </div>
     </div>
@@ -85,6 +94,15 @@
     </div>
   </section>
 
+  <!-- Education Details -->
+  <section id="education-details" class="details">
+    <div class="container">
+      <h2>Education - Detailed</h2>
+      <p>I completed my Master’s in Computer Science from Texas Tech University, where I developed a strong foundation in data analysis, machine learning, and software development.</p>
+      <a href="#education" class="back-link">Back to Education</a>
+    </div>
+  </section>
+
   <!-- JavaScript for Scroll Animation -->
   <script>
     // Show sections on scroll
@@ -106,6 +124,12 @@
       const projectsPosition = projectsSection.getBoundingClientRect().top;
       if (projectsPosition < screenPosition) {
         projectsSection.classList.add('visible');
+      }
+
+      const educationSection = document.querySelector('.education');
+      const educationPosition = educationSection.getBoundingClientRect().top;
+      if (educationPosition < screenPosition) {
+        educationSection.classList.add('visible');
       }
     });
   </script>
