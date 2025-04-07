@@ -2,7 +2,7 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #333; /* Dark grey background */
-  color: white; /* Light text color for visibility */
+  color: white;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -50,62 +50,128 @@ body {
 
 /* Sections (Intro, About, Education, Experience, Projects) */
 section {
-  opacity: 1; /* Ensure sections are visible by default */
   padding: 80px 0;
   text-align: center;
+  opacity: 1; /* Ensure sections are visible */
 }
 
-section h2 {
-  font-size: 2.5em;
+/* Intro Section */
+#intro {
+  background-color: #222; /* Dark grey background */
+  color: white;
+}
+
+#intro h1 {
+  font-size: 3.5em;
   margin-bottom: 20px;
-  color: #ecf0f1;
 }
 
-section p {
-  font-size: 1.2em;
-  color: #bdc3c7;
+#intro p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 
-section .btn {
-  padding: 12px 20px;
+#intro .btn {
+  padding: 15px 25px;
   background-color: #2980b9;
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2em;
   border-radius: 5px;
 }
 
-section .btn:hover {
+#intro .btn:hover {
   background-color: #3498db;
 }
 
-/* Specific Section Styles */
-#intro {
-  background-color: #222; /* Darker background for intro */
-}
-
-#about, #education, #experience, #projects, #get-in-touch {
-  background-color: #444; /* Light dark background for sections */
-}
-
-.details {
-  background-color: #555; /* Slightly lighter dark background */
+/* Who Am I Section */
+#about {
+  background-color: #444; /* Light dark background */
   color: white;
-  padding: 50px 0;
 }
 
-.details h2 {
+#about h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.details p {
+#about p {
   font-size: 1.2em;
   color: #bdc3c7;
 }
 
-/* Contact Section */
-.get-in-touch {
+/* Education Section */
+#education {
+  background-color: #555; /* Slightly lighter background */
+  color: white;
+}
+
+#education h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#education p {
+  font-size: 1.2em;
+  color: #bdc3c7;
+}
+
+/* Experience Section */
+#experience {
+  background-color: #222; /* Darker background for experience */
+  color: white;
+}
+
+#experience h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#experience p {
+  font-size: 1.2em;
+  color: #bdc3c7;
+}
+
+#experience ul {
+  text-align: left;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+#experience li {
+  font-size: 1.2em;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #444;
+  color: white;
+}
+
+.project-card {
+  background-color: #555; /* Slightly lighter background for projects */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.project-card p {
+  color: #bdc3c7;
+}
+
+/* Get In Touch Section */
+#get-in-touch {
   background-color: #222;
   color: white;
   text-align: center;
@@ -127,18 +193,7 @@ section .btn:hover {
   color: #3498db;
 }
 
-/* Scroll Animation */
-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-section.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
