@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8; /* Background similar to the example you provided */
+  background-color: #f0f4f8; /* Light background color */
   margin: 0;
   padding: 0;
   color: #333;
@@ -14,9 +14,9 @@ body {
   padding: 40px 0;
 }
 
-/* Intro Section */
+/* Intro Section with Background */
 #intro {
-  background-image: url('background.jpg'); /* Change to your background image */
+  background-image: url('your-background-image.jpg'); /* Change this to your desired background */
   background-size: cover;
   color: white;
   text-align: center;
