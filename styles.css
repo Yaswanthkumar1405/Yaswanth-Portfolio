@@ -16,7 +16,7 @@ body {
 
 /* Intro Section with Background */
 #intro {
-  background-image: url('your-background-image.jpg'); /* Change this to your desired background */
+  background-image: url('your-background-image.jpg'); /* Replace this with the actual image */
   background-size: cover;
   color: white;
   text-align: center;
