@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <!-- Intro Section with background image -->
+  <!-- Intro Section with Background -->
   <section id="intro" class="intro">
     <div class="container">
       <h1>Hi, I'm Yaswanth Kumar Chaganti</h1>
@@ -45,12 +45,15 @@
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="education">
+  <!-- Get In Touch Section -->
+  <section id="get-in-touch" class="get-in-touch">
     <div class="container">
-      <h2>Education</h2>
-      <p>With a master's degree in Computer Science and years of learning, I’ve gained the tools to help businesses make data-driven decisions.</p>
-      <a href="#education-details" class="btn">Learn More</a>
+      <h2>Get In Touch</h2>
+      <p>If you'd like to reach out, feel free to connect with me on the following platforms:</p>
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="mailto:yaswanthkumar@gmail.com">yaswanthkumar@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti" target="_blank">LinkedIn Profile</a></p>
+      </div>
     </div>
   </section>
 
@@ -82,15 +85,6 @@
     </div>
   </section>
 
-  <!-- Education Details -->
-  <section id="education-details" class="details">
-    <div class="container">
-      <h2>Education - Detailed</h2>
-      <p>I completed my Master’s in Computer Science from Texas Tech University, where I developed a strong foundation in data analysis, machine learning, and software development.</p>
-      <a href="#education" class="back-link">Back to Education</a>
-    </div>
-  </section>
-
   <!-- JavaScript for Scroll Animation -->
   <script>
     // Show sections on scroll
@@ -100,6 +94,18 @@
       const screenPosition = window.innerHeight / 1.5;
       if (sectionPosition < screenPosition) {
         aboutSection.classList.add('visible');
+      }
+
+      const experienceSection = document.querySelector('.experience');
+      const experiencePosition = experienceSection.getBoundingClientRect().top;
+      if (experiencePosition < screenPosition) {
+        experienceSection.classList.add('visible');
+      }
+
+      const projectsSection = document.querySelector('.projects');
+      const projectsPosition = projectsSection.getBoundingClientRect().top;
+      if (projectsPosition < screenPosition) {
+        projectsSection.classList.add('visible');
       }
     });
   </script>
