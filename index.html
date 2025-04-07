@@ -12,71 +12,81 @@
   <!-- Header Section -->
   <header class="header">
     <div class="container">
-      <!-- Profile Picture -->
       <img src="yaswanth-profile.jpg" alt="Yaswanth Kumar Chaganti" class="profile-img">
-      <h1 class="title">Yaswanth Kumar Chaganti</h1>
-      <p class="subtitle">Data Analyst | Power BI | SQL | Python | Forecasting & Dashboards</p>
-      <div class="social-links">
-        <a href="https://github.com/Yaswanthkumar1405/data-analyst-portfolio" target="_blank" class="social-btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti" target="_blank" class="social-btn">LinkedIn</a>
-      </div>
+      <h1 class="name">Yaswanth Kumar Chaganti</h1>
+      <p class="subtitle">Data Analyst | Power BI | Python | SQL | Machine Learning</p>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <!-- About Me Section -->
-  <section class="about">
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I’m a Data Analyst with 3.5+ years of experience building dashboards, automating reports, and extracting insights using Power BI, SQL, and Python. Passionate about forecasting and solving business problems with data.</p>
+      <p>I’m a Data Analyst with over 3.5 years of experience in data analysis, building dashboards, automating reports, and working with technologies like Power BI, SQL, and Python. Passionate about making data-driven decisions and solving complex business problems.</p>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="skills">
+  <section id="skills" class="skills">
     <div class="container">
       <h2>Skills & Tools</h2>
-      <ul>
-        <li>SQL</li>
-        <li>Python</li>
-        <li>Power BI</li>
-        <li>Tableau</li>
-        <li>DAX / Power Query</li>
-        <li>Excel / Forecasting</li>
-      </ul>
+      <div class="skills-list">
+        <div class="skill-item">
+          <img src="powerbi-icon.png" alt="Power BI">
+          <p>Power BI</p>
+        </div>
+        <div class="skill-item">
+          <img src="python-icon.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="sql-icon.png" alt="SQL">
+          <p>SQL</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section class="projects">
+  <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
 
       <!-- Project 1 -->
       <div class="project-card">
-        <img src="sales-analytics.jpg" alt="Sales Analytics Dashboard" class="project-img">
+        <img src="sales-analytics.jpg" alt="Sales Analytics Dashboard">
         <h3>Sales Analytics Dashboard</h3>
-        <p>A Power BI dashboard analyzing regional sales, profit, and shipping trends.</p>
-        <p>Coming soon</p>
+        <p>Power BI dashboard analyzing regional sales and shipping trends.</p>
       </div>
 
       <!-- Project 2 -->
       <div class="project-card">
-        <img src="covid-trend-analysis.jpg" alt="COVID-19 Trend Analysis" class="project-img">
+        <img src="covid-trend-analysis.jpg" alt="COVID-19 Trend Analysis">
         <h3>COVID-19 Trend Analysis</h3>
-        <p>A global COVID-19 dashboard with filters, forecasts, and drill-down visuals.</p>
-        <p>Planned</p>
+        <p>Dashboard analyzing global COVID-19 trends with data filters and projections.</p>
       </div>
     </div>
   </section>
 
-  <!-- Resume Section -->
-  <section class="resume">
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
     <div class="container">
-      <h2>Resume</h2>
-      <a href="https://drive.google.com/file/d/1cSZ_kYu-9LuPjVyqf4-ww8cYiJS3f4rJ/view?usp=drive_link" target="_blank" class="btn-resume">Download Resume</a>
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-contact">Send Message</button>
+      </form>
     </div>
   </section>
-
 </body>
 
 </html>
