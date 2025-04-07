@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ecf0f1; /* Lighter background color similar to the example you provided */
+  background-color: #f0f4f8; /* Background similar to the example you provided */
   margin: 0;
   padding: 0;
   color: #333;
@@ -14,203 +14,112 @@ body {
   padding: 40px 0;
 }
 
-/* Header Section */
-.header {
-  background-color: #2980b9; /* Matching header background */
+/* Intro Section */
+#intro {
+  background-image: url('background.jpg'); /* Change to your background image */
+  background-size: cover;
   color: white;
-  padding: 50px 0;
   text-align: center;
-  position: relative;
+  padding: 100px 0;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+#intro h1 {
+  font-size: 3.5em;
   margin-bottom: 20px;
 }
 
-.name {
-  font-size: 3em;
-  margin: 10px 0;
-}
-
-.subtitle {
-  font-size: 1.2em;
-  color: #ecf0f1;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #3498db;
-  padding: 10px 0;
-  z-index: 100;
-}
-
-.navbar ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar ul li {
-  margin: 0 20px;
-}
-
-.navbar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-.navbar ul li a:hover {
-  color: #ecf0f1;
-}
-
-/* About Section */
-.about {
-  padding: 80px 0;
-  background-color: #ecf0f1;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.about.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.about p {
-  font-size: 1.2em;
-  color: #7f8c8d;
-}
-
-/* Skills Section */
-.skills {
-  padding: 80px 0;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.skills.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.skills h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.skills-list {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.skill-item {
-  width: 100px;
-  text-align: center;
-}
-
-.skill-item img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-.skill-item p {
-  font-size: 1.2em;
-  color: #7f8c8d;
-}
-
-/* Projects Section */
-.projects {
-  padding: 80px 0;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.projects h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.project-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+#intro p {
+  font-size: 1.5em;
   margin-bottom: 30px;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.project-card h3 {
-  font-size: 1.5em;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* Get In Touch Section */
-.get-in-touch {
-  padding: 80px 0;
-  background-color: #2980b9; /* Matching background color */
+#intro .btn {
+  padding: 15px 25px;
+  background-color: #2980b9;
   color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+#intro .btn:hover {
+  background-color: #3498db;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 0;
   text-align: center;
 }
 
-.get-in-touch h2 {
+section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.contact-details {
+section p {
   font-size: 1.2em;
-  margin-top: 20px;
+  color: #7f8c8d;
 }
 
-.contact-details a {
-  color: #ecf0f1;
+section .btn {
+  padding: 12px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+section .btn:hover {
+  background-color: #3498db;
+}
+
+/* Details Section */
+.details {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.details h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+.details .back-link {
+  font-size: 1.2em;
+  color: #2980b9;
   text-decoration: none;
 }
 
-.contact-details a:hover {
+.details .back-link:hover {
   color: #3498db;
+}
+
+/* Scroll Animation */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section#intro {
+  opacity: 1;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
-  }
-
-  .skills-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project-card h3 {
-    font-size: 1.2em;
   }
 }
