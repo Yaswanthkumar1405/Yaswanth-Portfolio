@@ -10,6 +10,7 @@ body {
   background-position: center center;
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   height: 100vh; /* Ensure full height */
+  font-size: 16px;
 }
 
 /* Container Styles */
@@ -22,7 +23,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black; /* Header background color */
+  background-color: black; /* Keep header's background black */
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -93,11 +94,23 @@ body {
   transform: scale(1.1);
 }
 
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+
+section:nth-child(odd) {
+  background-color: #2c3e50; /* Dark gray for odd sections */
+}
+
+section:nth-child(even) {
+  background-color: #ecf0f1; /* Light gray for even sections */
+}
+
 /* About Me Section */
 #about {
-  padding: 60px 0;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
   color: white;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
 }
 
 .about-content {
@@ -133,27 +146,8 @@ body {
   background-color: red;
 }
 
-/* Experience Section */
-#experience {
-  padding: 60px 0;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
-}
-
-.experience-details div {
-  margin: 10px 0;
-  padding: 20px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.experience-details h3 {
-  font-size: 22px;
-  color: #fff;
-  text-transform: uppercase; /* Capitalize the section name */
-}
-
 /* Projects Section */
 #projects {
-  padding: 60px 0;
   background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
 }
 
@@ -197,7 +191,6 @@ body {
 
 /* Contact Section */
 #contact {
-  padding: 60px 0;
   background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
   color: white;
 }
