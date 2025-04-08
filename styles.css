@@ -4,9 +4,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4; /* Light gray background */
+  background: url('images/data.webp') no-repeat center center/cover; /* Set background image for entire body */
+  color: white; /* Default text color for white text on the background */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
 }
 
+/* Container Styles */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -16,7 +19,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black;
+  background-color: black; /* Keep header's background black */
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -52,10 +55,10 @@ body {
 
 /* Intro Section */
 #intro {
-  background: url('images/data.webp') no-repeat center center/cover;
   color: white;
   padding: 100px 0; /* Adjust padding to allow space for the fixed header */
   text-align: center;
+  background: none; /* No background for intro */
 }
 
 #intro h1 {
@@ -87,9 +90,9 @@ body {
 
 /* About Me Section */
 #about {
-  background-color: #333;
-  color: white;
   padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+  color: white;
 }
 
 .about-content {
@@ -127,8 +130,8 @@ body {
 
 /* Experience Section */
 #experience {
-  background-color: #f4f4f4;
   padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
 }
 
 .experience-details div {
@@ -145,8 +148,8 @@ body {
 
 /* Projects Section */
 #projects {
-  background-color: #fff;
   padding: 60px 0;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight white background for contrast */
 }
 
 .project-row {
@@ -189,9 +192,9 @@ body {
 
 /* Contact Section */
 #contact {
-  background-color: #333;
-  color: white;
   padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+  color: white;
 }
 
 .contact-details p {
