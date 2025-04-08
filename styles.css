@@ -1,146 +1,95 @@
-/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #2c3e50; /* Dark background color */
-  color: white;
-  font-size: 16px;
 }
 
-/* Header Styles */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  padding: 15px;
-  z-index: 1000;
+header {
+  background-image: url('images/data.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-.header nav ul li {
-  margin: 0 20px;
+header p {
+  font-size: 1.2rem;
 }
 
-.header nav ul li a {
-  text-decoration: none;
+header .social-links {
+  margin-top: 20px;
+}
+
+header .social-links a {
+  margin: 0 10px;
   color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
-.header nav ul li a:hover {
+header .social-links a:hover {
   color: red;
 }
 
-/* Intro Section */
-#intro {
+section {
+  padding: 60px 10%;
+}
+
+.section-dark {
+  background-color: #2d3e50;
   color: white;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: url('images/data.webp') no-repeat center center/cover; /* Background Image */
-  background-size: cover;
-  background-attachment: fixed;
 }
 
-#intro h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.section-light {
+  background-color: #f0f4f8;
+  color: #333;
 }
 
-#intro p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-#intro .btn {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-size: 16px;
+h2 {
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
-#intro .btn:hover {
-  background-color: red;
+ul {
+  list-style-type: none;
 }
 
-/* Section Styles */
-section {
-  padding: 60px 0;
-  background: linear-gradient(135deg, rgba(44, 62, 80, 0.85) 50%, rgba(52, 152, 219, 0.85) 50%); /* Subtle gradient for section breaks */
-}
-
-section:nth-child(even) {
-  background: linear-gradient(135deg, rgba(52, 152, 219, 0.85) 50%, rgba(44, 62, 80, 0.85) 50%);
-}
-
-section h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
-section p {
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* Projects Section */
-.project-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+ul li {
+  margin: 10px 0;
 }
 
 .project-card {
+  margin: 20px 0;
+  display: inline-block;
   width: 30%;
-  margin: 10px;
-  background-color: #34495e;
-  padding: 20px;
   text-align: center;
 }
 
 .project-card img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .project-card h3 {
-  color: white;
+  margin-top: 10px;
+  font-size: 1.2rem;
 }
 
-.project-card a {
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
+.contact-info a {
+  color: #2d3e50;
   text-decoration: none;
 }
 
-.project-card a:hover {
-  background-color: red;
-}
-
-footer {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
+.contact-info a:hover {
+  color: red;
 }
