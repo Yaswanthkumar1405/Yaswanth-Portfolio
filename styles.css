@@ -8,27 +8,20 @@ body {
   background: url('images/data.webp') no-repeat center center/cover; /* Full-page background */
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
-  height: 100vh; /* Ensure full height */
+  background-attachment: fixed;
+  height: 100vh;
   font-size: 16px;
-}
-
-/* Container Styles */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 /* Header Styles */
 .header {
-  background-color: black; /* Keep header's background black */
+  background-color: black; /* Black header background */
   padding: 20px 0;
   position: fixed;
   width: 100%;
   z-index: 1000;
   top: 0;
+  text-align: center;
 }
 
 .header nav ul {
@@ -87,7 +80,6 @@ body {
   width: 30px;
   height: 30px;
   transition: transform 0.3s;
-  filter: invert(1); /* Make icons white */
 }
 
 .social-icon img:hover {
@@ -99,6 +91,7 @@ section {
   padding: 60px 0;
 }
 
+/* Alternating Section Background */
 section:nth-child(odd) {
   background-color: #2c3e50; /* Dark gray for odd sections */
 }
@@ -107,50 +100,22 @@ section:nth-child(even) {
   background-color: #ecf0f1; /* Light gray for even sections */
 }
 
-/* About Me Section */
-#about {
-  color: white;
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+section .section-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about-content {
-  display: flex;
-  justify-content: space-between;
+.section-content {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.about-text {
-  width: 65%;
-}
-
-.contact-info {
-  width: 30%;
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.contact-info h3 {
-  font-size: 20px;
-  text-transform: uppercase; /* Capitalize the section name */
-}
-
-.contact-info a {
-  background-color: #000;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.contact-info a:hover {
-  background-color: red;
-}
-
-/* Projects Section */
-#projects {
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
-}
-
+/* Project Layout */
 .project-row {
   display: flex;
   justify-content: space-between;
@@ -168,13 +133,11 @@ section:nth-child(even) {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 5px;
 }
 
 .project-card h3 {
   font-size: 20px;
   color: #fff;
-  text-transform: uppercase; /* Capitalize the section name */
 }
 
 .project-card a {
@@ -189,25 +152,10 @@ section:nth-child(even) {
   background-color: red;
 }
 
-/* Contact Section */
-#contact {
-  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
+/* Footer Section */
+footer {
+  background-color: black;
+  padding: 20px 0;
   color: white;
-}
-
-.contact-details p {
-  font-size: 16px;
-}
-
-.contact-details a {
-  color: white;
-  text-decoration: none;
-  background-color: #000;
-  padding: 10px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.contact-details a:hover {
-  background-color: red;
+  text-align: center;
 }
