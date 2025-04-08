@@ -4,12 +4,14 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white; /* Default text color for white text on the background */
-  background-color: black; /* Set black background */
-  background-image: url('images/data.webp'); /* Set background image */
+  background-color: black; /* Base background color for the whole page */
+  background-image: url('images/data.webp'); /* Set the background image */
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-attachment: fixed;
+  color: white; /* Default text color */
+  height: 100vh; /* Ensure full height */
+  font-size: 16px;
 }
 
 /* Container Styles */
@@ -22,7 +24,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black; /* Keep header's background black */
+  background-color: black;
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -61,7 +63,9 @@ body {
   color: white;
   padding: 100px 0; /* Adjust padding to allow space for the fixed header */
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Slight transparent black overlay */
+  background: rgba(0, 0, 0, 0.6); /* Add dark overlay to improve readability */
+  position: relative;
+  z-index: 1;
 }
 
 #intro h1 {
@@ -85,7 +89,7 @@ body {
   width: 30px;
   height: 30px;
   transition: transform 0.3s;
-  filter: invert(1); /* Make icons white on intro page */
+  filter: invert(1); /* Make icons white */
 }
 
 .social-icon img:hover {
@@ -153,7 +157,7 @@ body {
 /* Projects Section */
 #projects {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.9); /* Slight white background for contrast */
+  background: rgba(255, 255, 255, 0.8); /* Slight white background for contrast */
 }
 
 .project-row {
