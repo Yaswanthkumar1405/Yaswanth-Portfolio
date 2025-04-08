@@ -153,28 +153,30 @@
     </div>
   </section>
 
-  <!-- JavaScript for Scroll Animation -->
+  <!-- JavaScript for Scroll Animation and Active Link Highlight -->
   <script>
-    // Show sections on scroll
-    window.addEventListener('scroll', function () {
-      const aboutSection = document.querySelector('.about');
-      const sectionPosition = aboutSection.getBoundingClientRect().top;
-      const screenPosition = window.innerHeight / 1.5;
-      if (sectionPosition < screenPosition) {
-        aboutSection.classList.add('visible');
-      }
+    // Get all the sections and links
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.header nav ul li a');
 
-      const experienceSection = document.querySelector('.experience');
-      const experiencePosition = experienceSection.getBoundingClientRect().top;
-      if (experiencePosition < screenPosition) {
-        experienceSection.classList.add('visible');
-      }
+    // Function to handle active class based on scroll position
+    window.addEventListener('scroll', () => {
+      let currentSection = '';
 
-      const projectsSection = document.querySelector('.projects');
-      const projectsPosition = projectsSection.getBoundingClientRect().top;
-      if (projectsPosition < screenPosition) {
-        projectsSection.classList.add('visible');
-      }
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          currentSection = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === currentSection) {
+          link.classList.add('active');
+        }
+      });
     });
   </script>
 </body>
