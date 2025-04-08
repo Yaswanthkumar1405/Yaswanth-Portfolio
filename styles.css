@@ -38,7 +38,7 @@ body {
 
 .header nav ul li a {
   text-decoration: none;
-  color: #ffffff; /* Default white color for text */
+  color: #e74c3c; /* New color for the header text (red) */
   font-size: 20px; /* Slightly larger font size */
   font-weight: bold; /* Make the text bold */
   text-transform: uppercase; /* Uppercase text for better visibility */
