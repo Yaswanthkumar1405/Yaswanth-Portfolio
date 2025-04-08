@@ -107,11 +107,51 @@ section p {
   color: #e74c3c; /* Red color on hover */
 }
 
-.projects, .experience, .education {
+/* Projects Section */
+.projects {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Separate sections clearly */
+.projects-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 30%;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-top: 15px;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #777;
+}
+
+/* Section Color Alternation */
+section:nth-of-type(even) {
+  background-color: #333; /* Dark background for even sections */
+}
+
+section:nth-of-type(odd) {
+  background-color: #444; /* Light background for odd sections */
+}
+
 section {
   padding: 50px 0;
 }
