@@ -3,25 +3,19 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('images/data.webp');  /*Path to your background image */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #ffffff; /* Optional: Change text color to make it more visible */
+  background-color: #121212; /* Dark background color for the whole page */
+  color: #ffffff;
 }
 
-/* Container for center alignment */
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-/* Header Section */
+/* Header Section Styling */
 .header {
-  background-color: #333;
-  padding: 20px;
+  background-color: #7f8c8d; /* Gray background color for the header */
+  padding: 10px 0; /* Reduced the padding to make it less large */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray; /* Optional: Add a shadow effect to the header */
 }
 
 .header nav ul {
@@ -38,146 +32,74 @@ body {
 
 .header nav ul li a {
   text-decoration: none;
-  color: #e74c3c; /* New color for the header text (red) */
-  font-size: 20px; /* Slightly larger font size */
-  font-weight: bold; /* Make the text bold */
-  text-transform: uppercase; /* Uppercase text for better visibility */
-  letter-spacing: 1px; /* Adds a bit of spacing between letters */
-  transition: color 0.3s ease; /* Smooth transition for color change */
+  color: #ffffff; /* White text color in the header */
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
-.header nav ul li a:hover {
-  color: #f39c12; /* Highlight color on hover */
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds a soft shadow effect to the text on hover */
+.header nav ul li a:hover, .header nav ul li a.active {
+  color: #e74c3c; /* Red color when hovered or active */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow effect when hovering or active */
 }
 
-/* Intro Section */
-.intro {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
-  text-align: center;
+/* Fixed Header on Scroll */
+body {
+  padding-top: 60px; /* Adds padding so content doesn't hide behind fixed header */
 }
 
-.intro h1 {
-  font-size: 3em;
+/* Section Styling */
+section {
+  padding: 80px 0; /* Add space to the top of each section to make space for the header */
 }
 
-.intro p {
-  font-size: 1.2em;
-}
-
-/* Who Am I Section */
-.about {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
-  text-align: center;
-}
-
-.about p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Education Section */
-.education {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
-  text-align: center;
-}
-
-.education p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-/* Experience Section */
-.experience {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
-}
-
-.experience h3 {
-  font-size: 1.8em;
-  margin-top: 30px;
-}
-
-.experience p {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-
-.experience ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.experience ul li {
-  font-size: 1.1em;
-  line-height: 1.5;
-}
-
-/* Projects Section */
-.projects {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
-}
-
-.projects h2 {
+/* Highlight the Sections like Education, Experience */
+section h2 {
   font-size: 2.5em;
-  text-align: center;
-  margin-bottom: 30px;
+  color: #e74c3c; /* Red color to highlight section titles */
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.project-card {
-  background-color: #555;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  text-align: center;
+section p {
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  max-height: 300px;
-}
-
-.project-card h3 {
-  margin-top: 10px;
-  font-size: 1.5em;
-}
-
-.project-card p {
+section .highlight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2em;
   color: #bdc3c7;
-  font-size: 1.1em;
+  margin-top: 20px;
 }
 
-/* Contact Section */
-.get-in-touch {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black to make text stand out */
-  padding: 50px 0;
+section .highlight strong {
+  color: #ffffff; /* Make section name bold and white */
 }
 
-.get-in-touch h2 {
-  font-size: 2.5em;
-  text-align: center;
-  margin-bottom: 30px;
+/* Add some padding to sections for better readability */
+.intro, .about, .experience, .education, .projects, .get-in-touch {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for sections */
 }
 
-.contact-details p {
-  font-size: 1.2em;
-  line-height: 1.6;
+/* Active Section Highlight in Header */
+nav a.active {
+  color: #e74c3c; /* Highlight the active section link in red */
 }
 
-.contact-details a {
-  color: #f39c12;
-  text-decoration: none;
+/* Styling for the Projects, Experience, Education Section */
+.projects, .experience, .education {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.contact-details a:hover {
-  color: #e67e22;
+/* Scroll behavior for each section */
+.projects h3, .experience h3, .education h3 {
+  font-size: 1.6em;
+  color: #e74c3c; /* Set section headings color to red */
 }
 
 /* Responsive Design */
