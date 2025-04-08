@@ -1,13 +1,10 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: url('images/data.webp') no-repeat center center/cover;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
+  background-color: #ecf0f1;
   font-size: 16px;
   color: white;
 }
@@ -55,6 +52,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: url('images/data.webp') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #intro h1 {
@@ -102,6 +102,7 @@ section p {
   line-height: 1.6;
 }
 
+/* Projects Section */
 .project-row {
   display: flex;
   justify-content: space-between;
