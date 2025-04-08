@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('images/data.webp'); /* Path to your background image */
+  background-image: url('images/Data-Analytics.jpg'); /* Path to your background image */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -38,12 +38,17 @@ body {
 
 .header nav ul li a {
   text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
+  color: #ffffff; /* Default white color for text */
+  font-size: 20px; /* Slightly larger font size */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Uppercase text for better visibility */
+  letter-spacing: 1px; /* Adds a bit of spacing between letters */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 .header nav ul li a:hover {
-  color: #f39c12;
+  color: #f39c12; /* Highlight color on hover */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Adds a soft shadow effect to the text on hover */
 }
 
 /* Intro Section */
@@ -186,7 +191,7 @@ body {
   }
 
   .project-card img {
-    max-height: 200px;
+    max-height: 200px; /* Reduce height on smaller screens */
   }
 
   .project-card h3 {
