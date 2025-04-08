@@ -113,6 +113,7 @@ body {
 
 .contact-info h3 {
   font-size: 20px;
+  text-transform: uppercase; /* Capitalize the section name */
 }
 
 .contact-info a {
@@ -169,6 +170,7 @@ body {
   max-width: 100%;
   height: auto;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .project-card h3 {
