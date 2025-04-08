@@ -93,14 +93,14 @@ body {
 }
 
 /* Sections (About, Experience, Projects, Contact) */
-section {
+.section {
   display: none;
   padding: 50px 0;
   text-align: center;
   background-color: #f0f0f0; /* Light background for all sections */
 }
 
-section.active {
+.section.active {
   display: block;
 }
 
