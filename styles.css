@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white; /* Default text color */
+  color: white;
   background: url('images/data.webp') no-repeat center center/cover; /* Full-page background */
   background-size: cover;
   background-position: center center;
@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black; /* Black header background */
+  background-color: black;
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -50,13 +50,18 @@ body {
   color: red;
 }
 
-/* Intro Section */
+/* Intro Section (Only visible part on first load) */
 #intro {
   color: white;
-  padding: 100px 0; /* Adjust padding to allow space for the fixed header */
+  padding: 100px 0;
   text-align: center;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  height: 100vh; /* Full screen for intro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #intro h1 {
@@ -66,6 +71,7 @@ body {
 
 #intro p {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .social-links {
@@ -86,73 +92,16 @@ body {
   transform: scale(1.1);
 }
 
-/* Section Styles */
+/* Hidden Sections by Default (they will be shown after scrolling) */
 section {
-  padding: 60px 0;
+  display: none;
 }
 
-/* Alternating Section Background */
-section:nth-child(odd) {
-  background-color: #2c3e50; /* Dark gray for odd sections */
+section.active {
+  display: block;
 }
 
-section:nth-child(even) {
-  background-color: #ecf0f1; /* Light gray for even sections */
-}
-
-section .section-title {
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.section-content {
-  text-align: center;
-  font-size: 16px;
-  padding: 0 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Project Layout */
-.project-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.project-card {
-  width: 30%;
-  margin: 10px;
-  text-align: center;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.project-card h3 {
-  font-size: 20px;
-  color: #fff;
-}
-
-.project-card a {
-  background-color: #000;
-  color: white;
-  padding: 10px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.project-card a:hover {
-  background-color: red;
-}
-
-/* Footer Section */
+/* Styling for the Footer */
 footer {
   background-color: black;
   padding: 20px 0;
