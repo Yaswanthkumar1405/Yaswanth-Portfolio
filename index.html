@@ -6,20 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yaswanth Kumar Chaganti | Data Analyst</title>
   <link href="styles.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
+
   <!-- Header Section with Navigation -->
   <header class="header">
     <nav>
       <ul>
         <li><a href="#intro" class="active">Intro</a></li>
-        <!-- Other Sections hidden initially, no need to show links right now -->
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Intro Section (Visible on the first page only) -->
+  <!-- Intro Section (Visible on first page only) -->
   <section id="intro">
     <div class="container">
       <h1>Hey, I'm Yaswanth Kumar Chaganti</h1>
@@ -31,25 +36,44 @@
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- Other Sections (hidden initially, visible on scroll or click) -->
   <section id="about">
-    <!-- Content for About Me here -->
+    <h2>About Me</h2>
+    <p>Your about content here...</p>
   </section>
 
-  <!-- Experience Section -->
   <section id="experience">
-    <!-- Content for Experience here -->
+    <h2>Experience</h2>
+    <p>Your experience content here...</p>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
-    <!-- Content for Projects here -->
+    <h2>Projects</h2>
+    <p>Your project content here...</p>
   </section>
 
-  <!-- Footer -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Your contact content here...</p>
+  </section>
+
   <footer>
     <p>© 2025 Yaswanth Kumar Chaganti | All Rights Reserved</p>
   </footer>
+
+  <script>
+    // Smooth scrolling to sections on click
+    $(document).ready(function () {
+      $("a").click(function (event) {
+        event.preventDefault();
+
+        var target = $(this).attr("href");
+        $("html, body").animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      });
+    });
+  </script>
 
 </body>
 
