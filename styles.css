@@ -4,12 +4,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black; /* Base background color for the whole page */
+  color: white; /* Default text color */
+  background-color: black; /* Base background color */
   background-image: url('images/data.webp'); /* Set the background image */
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
-  color: white; /* Default text color */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
   height: 100vh; /* Ensure full height */
   font-size: 16px;
 }
@@ -24,7 +24,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black;
+  background-color: black; /* Keep header's background black */
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -63,9 +63,7 @@ body {
   color: white;
   padding: 100px 0; /* Adjust padding to allow space for the fixed header */
   text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Add dark overlay to improve readability */
-  position: relative;
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
 }
 
 #intro h1 {
@@ -157,7 +155,7 @@ body {
 /* Projects Section */
 #projects {
   padding: 60px 0;
-  background: rgba(255, 255, 255, 0.8); /* Slight white background for contrast */
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for contrast */
 }
 
 .project-row {
