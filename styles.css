@@ -9,7 +9,7 @@ body {
 
 /* Header Section Styling */
 .header {
-  background-color: #7f8c8d; /* Gray background color for the header */
+  background-color: #000; /* Black background color for the header */
   padding: 10px 0; /* Reduced the padding to make it less large */
   position: fixed;
   top: 0;
@@ -33,7 +33,7 @@ body {
 .header nav ul li a {
   text-decoration: none;
   color: #ffffff; /* White text color in the header */
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -53,12 +53,13 @@ body {
 /* Section Styling */
 section {
   padding: 80px 0; /* Add space to the top of each section to make space for the header */
+  margin-top: 80px; /* Adds margin to keep the sections clearly separate from the header */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for each section */
 }
 
-/* Highlight the Sections like Education, Experience */
 section h2 {
   font-size: 2.5em;
-  color: #e74c3c; /* Red color to highlight section titles */
+  color: #ffffff; /* White color for section headings */
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -68,38 +69,51 @@ section p {
   line-height: 1.6;
 }
 
-section .highlight {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* About Me Section Details */
+.contact-details {
   font-size: 1.2em;
-  color: #bdc3c7;
   margin-top: 20px;
 }
 
-section .highlight strong {
-  color: #ffffff; /* Make section name bold and white */
+.download-btn {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* Add some padding to sections for better readability */
-.intro, .about, .experience, .education, .projects, .get-in-touch {
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for sections */
+.download-btn:hover {
+  background-color: #c0392b;
 }
 
-/* Active Section Highlight in Header */
-nav a.active {
-  color: #e74c3c; /* Highlight the active section link in red */
+/* Social Links in Intro Section */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Styling for the Projects, Experience, Education Section */
+.social-links .social-icon {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5em;
+  margin: 0 10px;
+}
+
+.social-links .social-icon:hover {
+  color: #e74c3c; /* Red color on hover */
+}
+
 .projects, .experience, .education {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* Scroll behavior for each section */
-.projects h3, .experience h3, .education h3 {
-  font-size: 1.6em;
-  color: #e74c3c; /* Set section headings color to red */
+/* Separate sections clearly */
+section {
+  padding: 50px 0;
 }
 
 /* Responsive Design */
