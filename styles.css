@@ -5,13 +5,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   color: white; /* Default text color */
-  background-color: black; /* Base background color */
-  background-image: url('images/data.webp'); /* Set the background image */
+  background: url('images/data.webp') no-repeat center center/cover; /* Full-page background */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; /* Keeps the background fixed while scrolling */
   height: 100vh; /* Ensure full height */
-  font-size: 16px;
 }
 
 /* Container Styles */
@@ -24,7 +22,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: black; /* Keep header's background black */
+  background-color: black; /* Header background color */
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -49,7 +47,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
@@ -64,6 +62,7 @@ body {
   padding: 100px 0; /* Adjust padding to allow space for the fixed header */
   text-align: center;
   background: rgba(0, 0, 0, 0.5); /* Dark overlay for better contrast */
+  z-index: 1;
 }
 
 #intro h1 {
