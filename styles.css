@@ -31,10 +31,12 @@ body {
 
 /* Intro Section */
 #intro {
-  background-color: #1a1a1a;
+  background: #121212; /* Dark black */
   color: white;
   padding: 100px 20px 60px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 #intro h1 {
@@ -56,7 +58,7 @@ body {
 
 /* About Section */
 #about {
-  background: #2c3e50;
+  background: #1f1f1f; /* Light black */
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -66,7 +68,7 @@ body {
 
 /* Education Section */
 #education {
-  background: #34495e;
+  background: #121212; /* Dark black */
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -76,7 +78,7 @@ body {
 
 /* Experience Section */
 #experience {
-  background: #1abc9c;
+  background: #1f1f1f; /* Light black */
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -86,7 +88,7 @@ body {
 
 /* Projects Section */
 #projects {
-  background: #2c3e50;
+  background: #121212; /* Dark black */
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -96,7 +98,7 @@ body {
 
 /* Contact Section */
 #contact {
-  background: #34495e;
+  background: #1f1f1f; /* Light black */
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -139,32 +141,32 @@ button:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
+  background: linear-gradient(135deg, transparent 60%, #121212 60%); /* Dark black for sections */
   z-index: -1;
 }
 
 #intro::before {
-  background: linear-gradient(135deg, transparent 60%, #1a1a1a 60%);
+  background: linear-gradient(135deg, transparent 60%, #121212 60%);
 }
 
 #about::before {
-  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
+  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%); /* Light black for this section */
 }
 
 #education::before {
-  background: linear-gradient(135deg, transparent 60%, #34495e 60%);
+  background: linear-gradient(135deg, transparent 60%, #121212 60%);
 }
 
 #experience::before {
-  background: linear-gradient(135deg, transparent 60%, #1abc9c 60%);
+  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%);
 }
 
 #projects::before {
-  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
+  background: linear-gradient(135deg, transparent 60%, #121212 60%);
 }
 
 #contact::before {
-  background: linear-gradient(135deg, transparent 60%, #34495e 60%);
+  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%);
 }
 
 /* Small Screen Adjustments */
