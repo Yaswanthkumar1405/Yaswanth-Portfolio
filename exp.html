@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add a subtle fade-in effect */
+        .experience-details-card {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInCard 0.5s ease-out forwards;
+            animation-delay: calc(0.2s * var(--card-index)); /* Staggered effect */
+        }
+
+        @keyframes fadeInCard {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="experience-details">
+        <div class="content">
+            <h2>Detailed Experience</h2>  <div id="experience-details-progress" class="experience-details-card" style="--card-index: 1;">
+                <h3>Data Analyst - Progress Solutions</h3>
+                <p class="company">Plano, TX (Apr 2024 - Present)</p>
+                <ul>
+                    <li>Designed interactive Power BI dashboards using DAX and Power Query to track business KPIs, enhancing executive decision-making and boosting stakeholder engagement by 30%. [cite: 6]</li>
+                    <li>Developed automated ETL pipelines using SQL and Power Query to cleanse and transform raw data from Azure SQL, Excel, and REST APIs, improving reporting accuracy and reducing delivery time by 40%. [cite: 7]</li>
+                    <li>Integrated multiple data sources into unified data models for real-time insights, enabling cross-departmental analytics and operational transparency. [cite: 8]</li>
+                    <li>Conducted A/B testing on analytics dashboards to validate design effectiveness and increase adoption among business users. [cite: 9]</li>
+                </ul>
+            </div>
+
+            <div id="experience-details-ttu" class="experience-details-card" style="--card-index: 2;">
+                <h3>Data Analyst - Texas Tech University</h3>
+                <p class="company">Lubbock, TX (Sep 2022 - Dec 2023)</p>
+                <ul>
+                    <li>Developed dashboards visualizing key hospitality metrics (occupancy rate, ADR, guest satisfaction), improving operational decision-making by 15%. [cite: 10]</li>
+                    <li>Automated workflows in Power BI using Power Query to streamline report generation and minimize data inconsistencies. [cite: 11]</li>
+                    <li>Improved the accuracy of service demand predictions by conducting trend analysis and building forecasting models for strategic planning in campus services. [cite: 12]</li>
+                </ul>
+            </div>
+
+            <div id="experience-details-accenture" class="experience-details-card" style="--card-index: 3;">
+                <h3>Data Analyst - Accenture Solutions Pvt Ltd</h3>
+                <p class="company">Pune, India (Aug 2020 - Dec 2021)</p>
+                <ul>
+                    <li>Developed scalable and dynamic dashboards in Power BI to monitor operational performance across departments, enabling real-time visibility and faster strategic decisions. [cite: 14]</li>
+                    <li>Utilized advanced DAX calculations and Power Query transformations to automate complex reporting tasks and reduce manual work by 50%. [cite: 15]</li>
+                    <li>Optimized SQL queries for large datasets, reducing dashboard load times by 60% and enhancing user experience. [cite: 16]</li>
+                    <li>Partnered with stakeholders to design KPI-driven dashboards aligned with organizational goals and reporting standards. [cite: 17]</li>
+                </ul>
+            </div>
+
+            <div id="experience-details-grepthor" class="experience-details-card" style="--card-index: 4;">
+                <h3>Data Analyst Intern - Grepthor Software Solutions</h3>
+                <p class="company">Hyderabad, India (Dec 2019 - May 2020)</p>
+                <ul>
+                    <li>Developed and implemented sales forecasting project using forecasting models, python and SQL to predict future sales trends, improving accuracy in business planning and inventory management. [cite: 19]</li>
+                    <li>Developed Power BI dashboards to present actionable insights, enabling stakeholders to make data-informed strategic decisions efficiently. [cite: 20]</li>
+                </ul>
+            </div>
+
+            <div class="navigation-buttons">
+                <a href="index.html" class="button">Back to Home</a>
+                <a href="index.html#projects" class="button">Back to Projects</a>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

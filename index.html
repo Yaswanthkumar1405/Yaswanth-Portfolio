@@ -1,131 +1,211 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaswanth Kumar Chaganti - Data Analyst Portfolio</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Text Effects */
+        h1 {
+            letter-spacing: 0.1em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            transition: color 0.3s ease;
+        }
+
+        h2 {
+            position: relative;
+            padding-bottom: 0.5em;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;
+            border-radius: 2px;
+            opacity: 0.8;
+        }
+
+        /* Project Card Effects */
+        .project-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Hover Effect */
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        /* Section Fade-In */
+        section {
+            opacity: 0;
+            animation: fadeInSection 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInSection {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Social Icon Styles */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
+
+        .social-icon {
+            display: inline-block;
+            margin: 0 0.5em;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icon img {
+            height: 2em;
+            width: auto;
+        }
+    </style>
 </head>
 
-<body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper">
+<body>
+    <header id="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Header -->
-        <header id="header" class="alt">
-            <a href="#intro" class="logo"><strong>Yaswanth Kumar Chaganti</strong> <span>Data Analyst Portfolio</span></a>
-            <nav>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+    <section class="hero">
+        <div class="content">
+            <h1>Yaswanth Kumar Chaganti</h1>
+            <p class="subtitle">Data Analyst</p>
+            <p class="summary">
+                Data Analyst with 3.5+ years of experience in Power BI, SQL, and Python, delivering data-driven insights across diverse industries. Specializes in building interactive dashboards, forecasting models, and automated reporting solutions to drive strategic business decisions and operational efficiency.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/yourgithub" class="social-icon" target="_blank">
+                    <img src="github.png" alt="GitHub">
+                </a>
+            </div>
+            <a href="#contact" class="button">Get In Touch</a>
+        </div>
+        <div class="overlay"></div>
+    </section>
 
-        <!-- Main -->
-        <main id="main">
-            <!-- Intro Section -->
-            <section id="intro" class="section">
-                <div class="inner">
-                    <header>
-                        <h1>Hi, I'm Yaswanth Kumar Chaganti</h1>
-                        <p>Data Analyst & Full Stack Developer</p>
-                        <p>Proficient in SQL, Python, Power BI, Tableau, and more, turning data into actionable insights that fuel business decisions.</p>
-                    </header>
-                    <div class="icons">
-                        <a href="https://github.com/YaswanthKumarChaganti" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
+    <section id="about">
+        <div class="content about-wrapper">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Your Profile Picture">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hi There! I'm a passionate and results-oriented data analyst with a strong foundation in data analysis, visualization, and modeling. Proven ability to translate complex data into actionable insights to support business growth.</p>
+                <div class="contact-details-small">
+                    <h3>Contact Details</h3>
+                    <p>Yaswanth Kumar Chaganti</p>
+                    <p>yaswanthkumarchaganti@gmail.com</p>
+                    <p>+1 (737)-297-7868</p>
+                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
+                </div>
+                <a href="Yaswanth Chaganti_DataAnalyst.pdf" class="button" download>Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="content">
+            <h2>Experience</h2>
+            <p class="experience-overview">
+                Driven data analyst with 3.5+ years of experience leveraging Power BI, SQL, and Python to deliver impactful data-driven insights. Expertise in crafting interactive dashboards, developing forecasting models, and automating reporting solutions, consistently contributing to strategic business decisions and enhanced operational efficiency.
+            </p>
+            <a href="exp.html" class="learn-more">Learn More</a>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="project1.jpg" alt="Library Data Optimization">
+                    </div>
+                    <div class="project-info">
+                        <h3>Library Data Optimization</h3>
+                        <p>
+                            Performed data analysis using SQL and Python to optimize inventory management and drive data-informed decisions for library operations. Built validated data models and created Power BI visualizations to highlight usage patterns and improve resource allocation across departments.
+                        </p>
                     </div>
                 </div>
-            </section>
-
-            <!-- About Section -->
-            <section id="about" class="section">
-                <div class="inner">
-                    <header class="major">
-                        <h2>About Me</h2>
-                    </header>
-                    <p>
-                        Data Analyst with 3.5+ years of experience in Power BI, SQL, and Python, delivering data-driven insights across diverse industries. I specialize in building interactive dashboards, forecasting models, and automated reporting solutions. Passionate about turning data into stories and actionable insights.
-                    </p>
-                    <button onclick="window.location.href='path-to-resume.pdf'">Download My Resume</button>
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <img src="project2.jpg" alt="Hospitality Performance Analytics">
+                    </div>
+                    <div class="project-info">
+                        <h3>Hospitality Performance Analytics</h3>
+                        <p>
+                            Developed a customized Power BI dashboard for the hospitality industry, visualizing occupancy rates, ADR, and guest satisfaction to support real-time performance monitoring. Implemented forecasting models to anticipate booking patterns, resulting in a 15% boost in operational efficiency through optimized resource allocation.
+                        </p>
+                    </div>
                 </div>
-            </section>
-
-            <!-- Education Section -->
-            <section id="education" class="section">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Education</h2>
-                    </header>
-                    <p>Bachelor's in Computer Science and Engineering</p>
-                    <p>Master's in Computer Science - Texas Tech University</p>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience" class="section">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Experience</h2>
-                    </header>
-                    <h3>Data Analyst - Master Electronics</h3>
-                    <p>Developed and implemented an automated data science portal, integrating tools for data analysis to streamline workflows.</p>
-                    <h3>Data Engineer - Progress Solutions</h3>
-                    <p>Designed and implemented automated data pipelines for data extraction, cleaning, and transformation, improving operational efficiency.</p>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="section">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Projects</h2>
-                    </header>
-                    <h3>Project 1: Data Science Portal Automation</h3>
-                    <p>Developed an automated portal integrating various data science tools and dashboards.</p>
-                    <h3>Project 2: Sales Forecasting with ARIMA</h3>
-                    <p>Built an ARIMA model to predict sales and optimize inventory management.</p>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact" class="section">
-                <div class="inner">
-                    <header class="major">
-                        <h2>Contact Me</h2>
-                    </header>
-                    <p>Email: yaswanthkumar@example.com</p>
-                    <p>Phone: +1 (123) 456-7890</p>
-                </div>
-            </section>
-
-        </main>
-
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="https://github.com/YaswanthKumarChaganti" class="icon brands fa-github"></a></li>
-                    <li><a href="https://www.linkedin.com/in/yaswanth-kumar-chaganti/" class="icon brands fa-linkedin"></a></li>
-                    <li><a href="mailto:yaswanthkumar@example.com" class="icon solid fa-envelope"></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; Portfolio</li>
-                </ul>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
 
-    <script src="assets/js/main.js"></script>
+    <section id="education">
+        <div class="content">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Master of Science in Computer Science</h3>
+                <p class="institution">Texas Tech University (2022-2023)</p>
+            </div>
+            <div class="education-item">
+                <h3>Bachelor of Technology, Computer Science and Engineering</h3>
+                <p class="institution">Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology (2016-2020)</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+            <p class="contact-info">
+                <a href="mailto:yaswanthkumarchaganti@gmail.com">yaswanthkumarchaganti@gmail.com</a>
+                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+            </p>
+            <a href="mailto:yaswanthkumarchaganti@gmail.com" class="button">Email Me</a>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy; 2025 Yaswanth Kumar Chaganti. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
