@@ -60,6 +60,8 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Education Section */
@@ -68,6 +70,8 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Experience Section */
@@ -76,6 +80,8 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Projects Section */
@@ -84,6 +90,8 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Contact Section */
@@ -92,6 +100,8 @@ body {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Footer */
@@ -122,24 +132,39 @@ button:hover {
   padding: 60px 20px;
 }
 
-.section::after {
+.section::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -50px; /* Adjusts the starting point of the slant */
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1e1e1e 60%, transparent);
+  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
   z-index: -1;
 }
 
-#intro::after,
-#about::after,
-#education::after,
-#experience::after,
-#projects::after,
-#contact::after {
-  background: linear-gradient(135deg, #2c3e50 60%, transparent);
+#intro::before {
+  background: linear-gradient(135deg, transparent 60%, #1a1a1a 60%);
+}
+
+#about::before {
+  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
+}
+
+#education::before {
+  background: linear-gradient(135deg, transparent 60%, #34495e 60%);
+}
+
+#experience::before {
+  background: linear-gradient(135deg, transparent 60%, #1abc9c 60%);
+}
+
+#projects::before {
+  background: linear-gradient(135deg, transparent 60%, #2c3e50 60%);
+}
+
+#contact::before {
+  background: linear-gradient(135deg, transparent 60%, #34495e 60%);
 }
 
 /* Small Screen Adjustments */
