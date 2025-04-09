@@ -8,7 +8,7 @@ body {
 
 /* Header */
 #header {
-  background-color: #000;
+  background-color: black;
   position: fixed;
   width: 100%;
   top: 0;
@@ -45,10 +45,12 @@ section {
 
 .section-bg {
   background-color: #333;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .section-bg-light {
   background-color: #444;
+  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
 }
 
 /* Intro Section */
@@ -156,10 +158,18 @@ section {
 /* Slanted Section Transition */
 .section-bg {
   background-color: #333;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 }
 
 .section-bg-light {
   background-color: #444;
-  clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+
+button {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
