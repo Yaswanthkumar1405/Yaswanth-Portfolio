@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  background-color: #1e1e1e; /* Black background */
+  background-color: #1e1e1e; /* Dark black background */
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,6 +16,7 @@ body {
   right: 0;
   padding: 15px;
   z-index: 10;
+  width: 100%;
 }
 
 #header a {
@@ -29,94 +30,73 @@ body {
   background-color: #555;
 }
 
-/* Intro Section */
-#intro {
-  background-color: #121212; /* Dark Black */
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  position: relative;
-}
-
-#intro h1 {
-  font-size: 40px;
-}
-
-#intro .icons {
-  margin-top: 30px;
-}
-
-#intro .icons a {
-  color: white;
-  margin: 0 10px;
-}
-
-#intro .icons a:hover {
-  color: #f39c12;
-}
-
-/* Slanted Background for the Sections */
+/* Sections */
 .section {
-  position: relative;
   padding: 60px 20px;
-  text-align: center;
+  position: relative;
 }
 
 .section::before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, transparent 60%, #121212 60%); /* Dark black for sections */
+  background: linear-gradient(135deg, transparent 50%, #121212 50%); /* Dark black */
   z-index: -1;
 }
 
-/* Section Colors and Slanted Lines */
+/* Slanted Background for the Sections */
+#intro {
+  background-color: #121212; /* Dark Black */
+  text-align: center;
+  padding: 100px 20px;
+}
+
 #about {
-  background: #1f1f1f; /* Light Black */
+  background-color: #1f1f1f; /* Light Black */
   padding: 60px 20px;
 }
 
 #about::before {
-  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%); /* Light black slant */
+  background: linear-gradient(135deg, transparent 50%, #1f1f1f 50%); /* Light black slant */
 }
 
 #education {
-  background: #121212; /* Dark Black */
+  background-color: #121212; /* Dark Black */
   padding: 60px 20px;
 }
 
 #education::before {
-  background: linear-gradient(135deg, transparent 60%, #121212 60%); /* Dark black slant */
+  background: linear-gradient(135deg, transparent 50%, #121212 50%); /* Dark black slant */
 }
 
 #experience {
-  background: #1f1f1f; /* Light Black */
+  background-color: #1f1f1f; /* Light Black */
   padding: 60px 20px;
 }
 
 #experience::before {
-  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%); /* Light black slant */
+  background: linear-gradient(135deg, transparent 50%, #1f1f1f 50%); /* Light black slant */
 }
 
 #projects {
-  background: #121212; /* Dark Black */
+  background-color: #121212; /* Dark Black */
   padding: 60px 20px;
 }
 
 #projects::before {
-  background: linear-gradient(135deg, transparent 60%, #121212 60%); /* Dark black slant */
+  background: linear-gradient(135deg, transparent 50%, #121212 50%); /* Dark black slant */
 }
 
 #contact {
-  background: #1f1f1f; /* Light Black */
+  background-color: #1f1f1f; /* Light Black */
   padding: 60px 20px;
 }
 
 #contact::before {
-  background: linear-gradient(135deg, transparent 60%, #1f1f1f 60%); /* Light black slant */
+  background: linear-gradient(135deg, transparent 50%, #1f1f1f 50%); /* Light black slant */
 }
 
 /* Footer */
