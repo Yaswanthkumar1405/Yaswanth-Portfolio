@@ -1,134 +1,95 @@
-/* Global Styles */
-* {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
   background-color: #f4f4f4;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-h1, h2, h3 {
   color: #333;
-  text-align: center;
 }
 
-/* Header Section */
 header {
-  background-color: #333;
+  background-color: #2d3e50;
   color: white;
-  padding: 20px 0;
+  text-align: center;
+  padding: 50px 0;
 }
 
-header .navbar {
-  display: flex;
-  justify-content: center;
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-header .navbar ul {
-  list-style: none;
-  display: flex;
+header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
 
-header .navbar li {
-  margin: 0 20px;
+header p {
+  font-size: 1rem;
+  margin-bottom: 30px;
 }
 
-header .navbar a {
+.explore-btn {
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  color: white;
   text-decoration: none;
-  color: white;
   font-weight: bold;
-  font-size: 18px;
+  border-radius: 5px;
 }
 
-header .navbar a:hover,
-header .navbar a.active {
-  color: #e74c3c;
+.explore-btn:hover {
+  background-color: #ff5c39;
 }
 
 /* Sections */
 section {
-  padding: 60px 10%;
-}
-
-#one, #two, #three, #four, #five, #six {
-  background-color: #f4f4f4;
-}
-
-section h2 {
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-section p, section ul {
-  font-size: 1rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  margin: 10px 0;
-}
-
-/* Project Cards */
-.project-card {
-  margin: 20px 0;
-  display: inline-block;
-  width: 30%;
+  padding: 60px 20px;
   text-align: center;
 }
 
-.project-card img {
-  width: 100%;
-  height: auto;
+section#intro {
+  background-color: #fff;
+  margin: 20px 0;
 }
 
-.project-card h3 {
-  margin-top: 10px;
-  font-size: 1.2rem;
+section#projects {
+  background-color: #e7eff6;
 }
 
-.project-card .btn {
-  background-color: #e74c3c;
-  padding: 10px 30px;
-  color: #fff;
+.project {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.project a {
+  color: #1e90ff;
   text-decoration: none;
-  border-radius: 5px;
 }
 
-.project-card .btn:hover {
-  background-color: #c0392b;
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Section */
+section#contact {
+  background-color: #fff;
+  margin: 20px 0;
 }
 
 /* Footer */
 footer {
-  background-color: #333;
+  background-color: #2d3e50;
   color: white;
-  padding: 20px 0;
   text-align: center;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-footer .icons {
-  margin: 20px 0;
-}
-
-footer .copyright {
-  font-size: 0.8rem;
+  padding: 20px;
+  margin-top: 20px;
 }
