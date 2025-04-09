@@ -132,3 +132,23 @@ button:hover {
   background: linear-gradient(135deg, #1e1e1e 60%, transparent);
   z-index: -1;
 }
+
+#intro::after,
+#about::after,
+#education::after,
+#experience::after,
+#projects::after,
+#contact::after {
+  background: linear-gradient(135deg, #2c3e50 60%, transparent);
+}
+
+/* Small Screen Adjustments */
+@media (max-width: 768px) {
+  #intro h1 {
+      font-size: 30px;
+  }
+
+  #header a {
+      font-size: 14px;
+  }
+}
